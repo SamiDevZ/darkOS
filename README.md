@@ -1,3 +1,3 @@
-#MC&D TERMINAL | v.0.1
+#darkOS | v.0.1
 
-FORKED REPO
+The newest addition to Samington's collective.
