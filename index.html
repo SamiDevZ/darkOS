@@ -1,20 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
   <title>MC&D TERMINAL | v.0.1</title>
-  <meta name="title" content="MC&D TERMINAL | jQuery Command Line Interface">
-  <meta name="description" content="Simulating a command line interface to display info using jQuery">
+  <meta name="title" content="darkOS | Command Line Interface">
+  <meta name="description" content="A command line interface which displays information relevant to dclipss' MC&D.">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 
 <main>
 <section id="home">
-<h2>MC&D TERMINAL | v.0.1</h2>
+<h2>darkOS | v.0.1</h2>
 <p>INFORMATIONAL HUB FOR <a href="https://www.roblox.com/groups/11382995/MC-D-Marshal-Carter-and-Dark-Ltd#!/about" target="_blank">MARSHAL, CARTER & DARK LTD.</a></p>
 <p><span>Type 'personnel' + <kbd>Enter</kbd> -- to view personnel files.</span></p>
 <p><span>Type 'incident' + <kbd>Enter</kbd> -- to view incident logs.</span></p>
@@ -22,24 +23,9 @@
 <p><span>Type 'ci' + <kbd>Enter</kbd> -- to view "Chaos Insurgency" related files.</span></p>
 </section>
 
-<section id="about">
-<h2><span>&raquo;About</span></h2>
-<p>This is an experiment built by <a href="http://syndicatefx.com" target="_blank">Paulo Nunes</a> for showcasing a user profile or cv in an unusual but original way by simulating a command line interface. It's nothing more than the usual hidden elements triggered by some jQuery to show/hide each section of content, based on input values.</p>
-<p>It makes use of <a href="https://github.com/gr8pathik/jquery-texttyper" target="_blank">jQuery-texttyper</a> for the fancy letter animations.</p>
-</section>
-
-<section id="usage">
-<h2><span>&raquo;Usage</span></h2>
-<p>Using it is pretty straight forward. Create several(as much as you need) divs or &laquo;section&raquo; elements each with it's unique id to hold your content. Make sure to have an error section (id="error") with some information to warn the user when he/she mistypes a command or if there is no section with that name, think of it as a 404 page.</p>
-<p>A section with id="help" is also required so you can list all the available sections and let your users know what words to write to access that particular content.</p>
-<p>The input field must be a standalone element and must not be placed inside any of the content divs or sections, and make sure you give it a classname "command", if you want to name it anything else you need to edit the app.js and change all instances of .command in the script to match your chosen classname.</p>
-<p>In short, just view the source code of this demo, copy/modify it to your liking making sure you include the error and help sections.</p>
-</section>
-
-<section id="download">
-<h2><span>&raquo;Download</span></h2>
-<p>Download/fork the source code: <a href="https://github.com/syndicatefx/cli">Github</a></br>
-License: MIT</p>
+<section id="isonoe">
+<h2><span>&raquo;Isonoe Simons</span></h2>
+<p>Test</p>
 </section>
 
 <section id="error">
@@ -47,19 +33,51 @@ License: MIT</p>
 <p><span>Type 'help' + <kbd>Enter</kbd> -- for available commands.</span></p>
 </section>
 
-<section id="help">
-<h2><span>&raquo;Help?</span></h2>
-<p><span>Type [command] + <kbd>Enter</kbd></span></p>
+<section id="personnel">
+<h2><span>&raquo;Personnel Roster</span></h2>
+<p><span>Type [name] + <kbd>Enter</kbd></span></p>
 <ul>
-	<li>'home' -- Thats obvious!</li>
-	<li>'about' -- What's this for</li>
-  <li>'usage' -- How to</li>
-  <li>'download' -- Download + license</li>
-	<li>'help' -- displays this list</li>
+	<li>'isonoe' -- Isonoe Simons</li>
 </ul>
 </section>
 
-<span class="command">user_99:/$<input type="text"></span>
+<section id="incident">
+<h2><span>&raquo;Incident Logs</span></h2>
+<p><span>Type [incident] + <kbd>Enter</kbd></span></p>
+<ul>
+    <li>None to report on.</li>
+</ul>
+</section>
+
+<section id="scpf">
+<h2><span>&raquo;The SCP Foundation</span></h2>
+<p><span>Type [log] + <kbd>Enter</kbd></span></p>
+<ul>
+    <progress id="BOOTING" max="100" value="100"> 100% </progress>
+    <li>[DATA CORRUPTED]</li>
+</ul>
+</section>
+
+<section id="ci">
+<h2><span>&raquo;Chaos Insurgency</span></h2>
+<p><span>Type [log] + <kbd>Enter</kbd></span></p>
+<ul>
+    <progress id="BOOTING" max="100" value="100"> 100% </progress>
+    <li>[DATA CORRUPTED]</li>
+</ul>
+</section>
+
+<section id="help">
+<h2><span>&raquo;Help</span></h2>
+<ul>
+    <p><span>Type 'personnel' + <kbd>Enter</kbd> -- to view personnel files.</span></p>
+    <p><span>Type 'incident' + <kbd>Enter</kbd> -- to view incident logs.</span></p>
+    <p><span>Type 'scpf' + <kbd>Enter</kbd> -- to view "Foundation" related files.</span></p>
+    <p><span>Type 'ci' + <kbd>Enter</kbd> -- to view "Chaos Insurgency" related files.</span></p>
+<ul>
+</section>
+
+<span class="command">AGENT_99:/$<input type="text"></span>
 </main>
 
 <script src="js/app.js"></script>
